@@ -1,0 +1,23 @@
+session: max-quality-mp3
+tasks:
+- id: T001
+  description: Optimize MP3 quality with format sorting
+  status: done
+  criteria: Use ba, sort by codec+bitrate, V0 encoding. Update help messages. Save
+    global best practices.
+  created: '2026-05-01T21:38:26Z'
+  completed: '2026-05-01T21:38:31Z'
+  log:
+  - at: '2026-05-01T21:38:31Z'
+    msg: 'Updated yt-dlp command: ba + -S acodec,abr + audio-quality 0'
+    files:
+    - bot.py
+  - at: '2026-05-01T21:38:31Z'
+    msg: Updated help messages to reflect V0 MP3
+    files:
+    - bot.py
+  - at: '2026-05-01T21:38:31Z'
+    msg: Saved yt-dlp best practices as global prompt
+    files:
+    - /root/.config/opencode/instructions/yt-dlp.md
+  notes: ''

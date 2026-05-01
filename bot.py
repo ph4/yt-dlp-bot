@@ -64,7 +64,9 @@ async def download_track(url: str, out_dir: str) -> str | None:
     cmd = [
         YT_DLP,
         "-f",
-        "bestaudio",
+        "ba",
+        "-S",
+        "acodec,abr",
         "-x",
         "--audio-format",
         "mp3",
@@ -124,7 +126,7 @@ async def cmd_start(message: types.Message) -> None:
     await message.answer(
         "Send me a YouTube link (single track or playlist) "
         "and I'll download the audio for you.\n\n"
-        "Output: 320kbps MP3 with embedded metadata + album art."
+        "Output: V0 MP3 (~260kbps) with embedded metadata + album art."
     )
 
 
@@ -132,7 +134,7 @@ async def cmd_start(message: types.Message) -> None:
 async def cmd_help(message: types.Message) -> None:
     await message.answer(
         "Just send a YouTube URL — single video or playlist. "
-        "I'll download the best quality MP3 (320kbps) with metadata and cover art."
+        "I'll download the best quality MP3 (V0 ~260kbps) with metadata and cover art."
     )
 
 
