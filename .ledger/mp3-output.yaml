@@ -1,0 +1,19 @@
+session: mp3-output
+tasks:
+- id: T001
+  description: Switch to max quality MP3 output
+  status: done
+  criteria: Bot downloads bestaudio, converts to 320kbps MP3 with metadata and cover
+    art
+  created: '2026-05-01T21:33:57Z'
+  completed: '2026-05-01T21:34:00Z'
+  log:
+  - at: '2026-05-01T21:34:00Z'
+    msg: 'Changed yt-dlp command: bestaudio -> -x -> mp3@320k'
+    files:
+    - bot.py
+  - at: '2026-05-01T21:34:00Z'
+    msg: Updated start/help messages for MP3 output
+    files:
+    - bot.py
+  notes: ''

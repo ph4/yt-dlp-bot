@@ -7,3 +7,10 @@ sessions:
   started: '2026-05-01T21:27:57Z'
   finished: '2026-05-01T21:29:06Z'
   summary: 1/1 tasks done
+- name: mp3-output
+  status: done
+  goal: Switch bot output from m4a/AAC to max quality MP3
+  sub_ledger: .ledger/mp3-output.yaml
+  started: '2026-05-01T21:33:23Z'
+  finished: '2026-05-01T21:34:03Z'
+  summary: 1/1 tasks done
