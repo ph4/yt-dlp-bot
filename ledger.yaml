@@ -21,3 +21,10 @@ sessions:
   started: '2026-05-01T21:36:40Z'
   finished: '2026-05-01T21:38:45Z'
   summary: 1/1 tasks done
+- name: zapret
+  status: done
+  goal: Self-hosted DPI bypass for Telegram MTProto + Bot API via zapret2+nftables
+  sub_ledger: .ledger/zapret.yaml
+  started: '2026-05-01T22:17:46Z'
+  finished: '2026-05-01T22:40:38Z'
+  summary: 1/1 tasks done

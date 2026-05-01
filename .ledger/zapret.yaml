@@ -1,0 +1,25 @@
+session: zapret
+tasks:
+- id: T001
+  description: Install zapret2 DPI bypass for Telegram
+  status: done
+  criteria: Self-hosted DPI bypass via nftables+NFQUEUE+nfqws2. Both MTProto and Bot
+    API work. Boot-persistent via systemd. Portable scripts in ~/portable/.
+  created: '2026-05-01T22:40:15Z'
+  completed: '2026-05-01T22:40:24Z'
+  log:
+  - at: '2026-05-01T22:40:24Z'
+    msg: Created portable scripts (setup-zapret.sh, teardown-zapret.sh, strategy.conf,
+      nftables.conf.template, DECISIONS.md)
+    files:
+    - /root/portable/setup-zapret.sh
+    - /root/portable/teardown-zapret.sh
+    - /root/portable/strategy.conf
+    - /root/portable/nftables.conf.template
+    - /root/portable/DECISIONS.md
+  - at: '2026-05-01T22:40:24Z'
+    msg: 'Fixed setup-zapret.sh: correct binary path (binaries/my/nfqws2), full deps,
+      ipcache fix'
+    files:
+    - /root/portable/setup-zapret.sh
+  notes: ''
