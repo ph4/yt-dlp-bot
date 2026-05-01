@@ -28,3 +28,10 @@ sessions:
   started: '2026-05-01T22:17:46Z'
   finished: '2026-05-01T22:40:38Z'
   summary: 1/1 tasks done
+- name: telegram-handoff
+  status: done
+  goal: Document Telegram DPI bypass setup, issues, and fallbacks
+  sub_ledger: .ledger/telegram-handoff.yaml
+  started: '2026-05-01T22:48:24Z'
+  finished: '2026-05-01T22:48:33Z'
+  summary: 0/0 tasks done
