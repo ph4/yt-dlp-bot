@@ -1,2 +1,9 @@
 current_session: null
-sessions: []
+sessions:
+- name: init
+  status: done
+  goal: Initialize yt-dlp-bot project with full tooling
+  sub_ledger: .ledger/init.yaml
+  started: '2026-05-01T21:27:57Z'
+  finished: '2026-05-01T21:29:06Z'
+  summary: 1/1 tasks done

@@ -1,0 +1,28 @@
+session: init
+tasks:
+- id: T001
+  description: Initial project setup
+  status: done
+  criteria: Repo initialized, ruff+mypy config, bot.py refactored, all project files
+    committed
+  created: '2026-05-01T21:28:59Z'
+  completed: '2026-05-01T21:29:04Z'
+  log:
+  - at: '2026-05-01T21:29:03Z'
+    msg: Created bot.py with all bugfixes, logging, and typing
+    files:
+    - bot.py
+  - at: '2026-05-01T21:29:03Z'
+    msg: Added ruff + mypy config
+    files:
+    - pyproject.toml
+  - at: '2026-05-01T21:29:04Z'
+    msg: Added dependency management with uv
+    files:
+    - requirements.txt
+  - at: '2026-05-01T21:29:04Z'
+    msg: Added .gitignore and .env.example
+    files:
+    - .gitignore
+    - .env.example
+  notes: ''
